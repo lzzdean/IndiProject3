@@ -1,0 +1,21 @@
+﻿<div class="row col-md-offset-1 col-md-10" ng-show="account.isLoggedIn()">
+    <a class="btn btn-default" ui-sref="addArtist()">Add Artist</a>
+    <table class="table table table-hover">
+        <thead>
+            <tr>
+                <td>Artist</td>
+                <td>Genre</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="artist in controller.Artists">
+                <td><b>{{artist.name}}</b></td>
+                <td><b>{{artist.genre}}</b></td>
+                <td><a class="btn btn-default" ui-sref="editArtist({id: artist.id})">Edit Artist</a><a class="btn btn-default" ui-sref="addAlbum({id: artist.id})">Add Album</a><a class="btn btn-default" href="/deleteArtist/{{artist.id}}">Delete Artist</a> </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,19 @@
+﻿<form ng-submit="controller.addAlbumToArtist()"  class="welcome col-md-offset-2 col-md-8">
+    <label>
+        Album Name:
+        <input type="text" placeholder="Album Name" ng-model="controller.album.name" />
+    </label>
+    <label>
+        Release Year:
+        <input type="text" placeholder="Release Year" ng-model="controller.album.year" />
+    </label>
+    <label>
+        Rating:
+        <input type="text" placeholder="Rating" ng-model="controller.album.rating" />
+    </label>
+    <label>
+        Album Cover Link:
+        <input type="text" placeholder="Album Name" ng-model="controller.album.albumArt" />
+    </label>
+    <input type="submit" class="btn btn-default" value="Add Album" />
+</form>

@@ -1,0 +1,20 @@
+﻿<form ng-submit="controller.editAlbum()" class="welcome col-md-offset-2 col-md-8">
+    <label>
+        Album Name:
+        <input type="text" placeholder="Name" ng-model="controller.album.name" ng-bind="controller.album.name" />
+    </label>
+    <label>
+        Release Year:
+        <input type="text" placeholder="Release Year" ng-model="controller.album.year" ng-bind="controller.album.year" />
+    </label>
+    <label>
+        Rating:
+        <input type="text" placeholder="Rating" ng-model="controller.album.rating" ng-bind="controller.album.rating" />
+    </label>
+    <label>
+        Album Cover Link:
+        <input type="text" placeholder="Album Name" ng-model="controller.album.albumArt" ng-bind="controller.album.albumArt" />
+    </label>
+
+    <input class="btn btn-default" type="submit" value="Edit Album" />
+</form>
